@@ -1,0 +1,40 @@
+{
+  "dataset": {
+    "name": "MNIST handwritten digits (OpenML mnist_784)",
+    "shape": [
+      70000,
+      784
+    ],
+    "train_size": 60000,
+    "test_size": 10000,
+    "classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "model": {
+    "name": "Convolutional Neural Network",
+    "architecture": "Conv2d(32) - Pool - Conv2d(64) - Pool - Dense(128) - Output(10)",
+    "optimizer": "Adam",
+    "loss": "CrossEntropyLoss",
+    "epochs": 5,
+    "batch_size": 128
+  },
+  "metrics": {
+    "accuracy": 0.9909,
+    "precision": 0.9908,
+    "recall": 0.9909,
+    "f1_score": 0.9909
+  },
+  "sample": {
+    "true_label": 7
+  }
+}
